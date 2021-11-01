@@ -3,7 +3,7 @@ library(tidyverse)
 library(viridis)
 library(cowplot)
 
-cleaned_root <- load("cleaned_root.rda")
+cleaned_root <- readRDS("cleaned_root.rda")
 theme_tsl <- function(base_size = 11, base_family = "") {
   theme_grey(base_size = base_size, base_family = base_family) %+replace%
     theme(
